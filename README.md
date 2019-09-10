@@ -1,3 +1,8 @@
+
+** DB APP(V2) **
+
+ Generic DB App will be useful for programmers who work with database operations
+
 JOINS
 -----------
 
