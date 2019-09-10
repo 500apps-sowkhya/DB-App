@@ -15,7 +15,7 @@ JOINS
 
 **Method** : ”POST”
 
-json object - raw data
+**json object - raw data**
 
 {"data":{
 
@@ -28,6 +28,7 @@ json object - raw data
 "group_by":"t.id"}}
 
 ![Image](images/joins.png "icon")
+
 **************************************************
 
 FILTERS
@@ -99,10 +100,11 @@ FILTERS
 
 **Method** : ”POST”
 
-json object - raw data
+**json object - raw data**
 
 {{raw-data}}
-{{image}}
+
+![Image](images/filters.png "icon")
 
 ***************************
 
@@ -126,7 +128,8 @@ SEARCH
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/search.png "icon")
 
 *******************************************
 
@@ -148,7 +151,8 @@ DESC
 **Method** : ”GET”
 
 {{raw-data}}
-{{image}}
+
+![Image](images/desc.png "icon")
 
 **********************************************
 
@@ -174,7 +178,8 @@ params
 form data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/import.png "icon")
 
 *****************************************************
 
@@ -200,7 +205,8 @@ params
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/export.png "icon")
 
 ****************************************************
 
@@ -224,7 +230,8 @@ CUSTOM QUERIES
 params
 
 {{raw-data}}
-{{image}}
+
+![Image](images/custom.png "icon")
 
 **************************************************
 
@@ -250,7 +257,8 @@ params
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/custominsert.png "icon")
 
 **************************************************
 
@@ -274,7 +282,8 @@ CUSTOM QUERIES UPDATE
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/customupdate.png "icon")
 
 ************************************************************
 
@@ -300,7 +309,8 @@ REPORTS
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/bar.png "icon")
 
 * Line Chart
 
@@ -321,7 +331,8 @@ json object - raw data
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/line.png "icon")
 
 * Funnel Chart
 
@@ -342,7 +353,8 @@ json object - raw data
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/funnel.png "icon")
 
 * Pie Chart
 
@@ -363,4 +375,5 @@ json object - raw data
 json object - raw data
 
 {{raw-data}}
-{{image}}
+
+![Image](images/pie.png "icon")
