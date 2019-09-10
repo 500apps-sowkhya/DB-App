@@ -1,5 +1,5 @@
 
-DB APP(V2)
+DB App(V2)
 -----------
 
  Generic DB App will be useful for programmers who work with database operations
