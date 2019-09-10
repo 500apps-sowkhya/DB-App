@@ -18,8 +18,8 @@ JOINS
 json object - raw data
 
 {{raw-data}}
-{{image}}
 
+![Image](images/joins.png "icon")
 **************************************************
 
 FILTERS
