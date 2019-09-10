@@ -3,7 +3,7 @@ JOINS
 
 **Expression**: /s/joins
 
-**Description** : This  will be used for joining multiple tables and get records..
+**Description** : This  will be used for joining multiple tables and get records.
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
@@ -426,8 +426,6 @@ json object - raw data
 
 **Method** : ”POST”
 
-json object - raw data
-
-{{raw-data}}
+**json object - raw data**
 
 ![Image](images/pie.png "icon")
