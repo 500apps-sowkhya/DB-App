@@ -1,90 +1,358 @@
-# Welcome to GitHub
+JOINS
+-----------
 
-Welcome to GitHub—where millions of developers work together on software. Ready to get started? Let’s learn how this all works by building and publishing your first GitHub Pages website!
+**Expression**: /s/joins
 
-## Repositories
+**Description** : This  will be used for joining multiple tables and get records..
 
-Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-This repository contains three important files: The HTML code for your first website on GitHub, the CSS stylesheet that decorates your website with colors and fonts, and the **README** file. It also contains an image folder, with one image file.
+**Rest Method**: POST
 
-## Describe your project
+> A sample is shown here
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
+**Trigger Expression** : [https://dbapp.500apps.com/v2/s/joins](https://dbapp.500apps.com/v2/s/joins)
 
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
+**Method** : ”POST”
 
-## Your first website
+json object - raw data
 
-**GitHub Pages** is a free and easy way to create a website using the code that lives in your GitHub repositories. You can use GitHub Pages to build a portfolio of your work, create a personal website, or share a fun project that you coded with the world. GitHub Pages is automatically enabled in this repository, but when you create new repositories in the future, the steps to launch a GitHub Pages website will be slightly different.
+{{raw-data}}
+{{image}}
 
-[Learn more about GitHub Pages](https://pages.github.com/)
+**************************************************
 
-## Rename this repository to publish your site
+FILTERS
+-------
 
-We've already set-up a GitHub Pages website for you, based on your personal username. This repository is called `hello-world`, but you'll rename it to: `username.github.io`, to match your website's URL address. If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.
+1.Supported Data Types
 
-Let's get started! To update this repository’s name, click the `Settings` tab on this page. This will take you to your repository’s settings page. 
+* String
 
-![repo-settings-image](https://user-images.githubusercontent.com/18093541/63130482-99e6ad80-bf88-11e9-99a1-d3cf1660b47e.png)
+* Number
 
-Under the **Repository Name** heading, type: `username.github.io`, where username is your username on GitHub. Then click **Rename**—and that’s it. When you’re done, click your repository name or browser’s back button to return to this page.
+* Date
 
-<img width="1039" alt="rename_screenshot" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
+* Boolean
 
-Once you click **Rename**, your website will automatically be published at: https://your-username.github.io/. The HTML file—called `index.html`—is rendered as the home page and you'll be making changes to this file in the next step.
+2.Supported Operators
 
-Congratulations! You just launched your first GitHub Pages website. It's now live to share with the entire world
+* EQUALS - User has to pass EQ in the attribute
 
-## Making your first edit
+* NOT EQUALS - User has to pass NE
 
-When you make any change to any file in your project, you’re making a **commit**. If you fix a typo, update a filename, or edit your code, you can add it to GitHub as a commit. Your commits represent your project’s entire history—and they’re all saved in your project’s repository.
+* LIKE - User has to pass LIKE
 
-With each commit, you have the opportunity to write a **commit message**, a short, meaningful comment describing the change you’re making to a file. So you always know exactly what changed, no matter when you return to a commit.
+* NOT LIKE - User has to pass NOTLIKE
 
-## Practice: Customize your first GitHub website by writing HTML code
+* IN - User has to pass IN
 
-Want to edit the site you just published? Let’s practice commits by introducing yourself in your `index.html` file. Don’t worry about getting it right the first time—you can always build on your introduction later.
+* NOT IN - User has to pass NOTIN
 
-Let’s start with this template:
+* IS NULL - User has to pass NULL
 
-```
-<p>Hello World! I’m [username]. This is my website!</p>
-```
+* IS NOT NULL - User has to pass NOTNULL
 
-To add your introduction, copy our template and click the edit pencil icon at the top right hand corner of the `index.html` file.
+* BETWEEN - User has to pass BW
 
-<img width="997" alt="edit-this-file" src="https://user-images.githubusercontent.com/18093541/63131820-0794d880-bf8d-11e9-8b3d-c096355e9389.png">
+* NOT BETWEEN - User has to pass NBW
 
+* STARTS WITH - User has to pass STARTSWITH
 
-Delete this placeholder line:
+* NOT STARTS WITH - User has to pass NOTSTARTSWITH
 
-```
-<p>Welcome to your first GitHub Pages website!</p>
-```
+* Ends with - User has to pass ENDS
 
-Then, paste the template to line 15 and fill in the blanks.
+* Not Ends with - User has to passNOTENDS
 
-<img width="1032" alt="edit-githuboctocat-index" src="https://user-images.githubusercontent.com/18093541/63132339-c3a2d300-bf8e-11e9-8222-59c2702f6c42.png">
+* To check empty data - EMPTY
 
+* To check non empty data - NOTEMPTY
 
-When you’re done, scroll down to the `Commit changes` section near the bottom of the edit page. Add a short message explaining your change, like "Add my introduction", then click `Commit changes`.
+* '>' - User has to pass GT
 
+* '<' - User has to pass LT
 
-<img width="1030" alt="add-my-username" src="https://user-images.githubusercontent.com/18093541/63131801-efbd5480-bf8c-11e9-9806-89273f027d16.png">
+* '>=' - User has to pass GTE
 
-Once you click `Commit changes`, your changes will automatically be published on your GitHub Pages website. Refresh the page to see your new changes live in action.
+* '<=' - User has to pass LTE
 
-:tada: You just made your first commit! :tada:
+**Expression**: /s/filters
 
-## Extra Credit: Keep on building!
+**Description** : This will be used to specify various filter criteria and retrieve the data from several tables.
 
-Change the placeholder Octocat gif on your GitHub Pages website by [creating your own personal Octocat emoji](https://myoctocat.com/build-your-octocat/) or [choose a different Octocat gif from our logo library here](https://octodex.github.com/). Add that image to line 12 of your `index.html` file, in place of the `<img src=` link.
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-Want to add even more code and fun styles to your GitHub Pages website? [Follow these instructions](https://github.com/github/personal-website) to build a fully-fledged static website.
+**Rest Method**: POST
 
-![octocat](./images/create-octocat.png)
+> A sample is shown here
 
-## Everything you need to know about GitHub
+**Trigger Expression** : [https://dbapp.500apps.com/v2/s/filters](https://dbapp.500apps.com/v2/s/filters)
 
-Getting started is the hardest part. If there’s anything you’d like to know as you get started with GitHub, try searching [GitHub Help](https://help.github.com). Our documentation has tutorials on everything from changing your repository settings to configuring GitHub from your command line.
+**Method** : ”POST”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+***************************
+
+SEARCH
+-------
+
+**Expression**: /s/multi
+
+**Description** : Let you do the search for multiple entities once at time, this  will useful.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/s/multi](https://dbapp.500apps.com/v2/s/multi)
+
+**Method** : ”POST”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+*******************************************
+
+DESC
+------
+
+**Expression**: /m/desc/{table_name}
+
+**Description** : Describe is used to describe the metadata of table. This will describe the structure of a table.
+
+**Input Type(JSON/Json Array/Form-Data)** : path
+
+**Rest Method**: GET
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/m/desc/ticket](https://dbapp.500apps.com/v2/m/desc/ticket)
+
+**Method** : ”GET”
+
+{{raw-data}}
+{{image}}
+
+**********************************************
+
+IMPORT
+------
+
+**Expression**: /m/import
+
+**Description** : This  is used for import data from csv file.
+
+**Input Type(JSON/Json Array/Form-Data)** : params,form data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/m/import](https://dbapp.500apps.com/v2/m/import)
+
+**Method** : ”POST”
+
+params
+
+form data
+
+{{raw-data}}
+{{image}}
+
+*****************************************************
+
+EXPORT
+------
+
+**Expression**: /m/export
+
+**Description** : This  is used for export data to csv file.
+
+**Input Type(JSON/Json Array/Form-Data)** : params,json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/m/export](https://dbapp.500apps.com/v2/m/export)
+
+**Method** : ”POST”
+
+params
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+****************************************************
+
+CUSTOM QUERIES
+------
+
+**Expression**: /cq/{entity_id}
+
+**Description** : In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
+
+**Input Type(JSON/Json Array/Form-Data)** : params
+
+**Rest Method**: GET
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/11](https://dbapp.500apps.com/v2/cq/11)
+
+**Method** : ”GET”
+
+params
+
+{{raw-data}}
+{{image}}
+
+**************************************************
+
+CUSTOM QUERIES INSERT
+----------------------
+
+**Expression**: /cq/{entity_id}
+
+**Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/7](https://dbapp.500apps.com/v2/cq/7)
+
+**Method** : ”POST”
+
+params
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+**************************************************
+
+CUSTOM QUERIES UPDATE
+----------------------
+
+**Expression**: /cq/{entity_id}
+
+**Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: PUT
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/8](https://dbapp.500apps.com/v2/cq/8)
+
+**Method** : ”PUT”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+************************************************************
+
+REPORTS
+--------
+
+* Bar Chart
+
+**Expression**: /r/bar
+
+**Description** :  This is used for reports barchart.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+
+**Method** : ”POST”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+* Line Chart
+
+**Expression**: /r/line
+
+**Description** :  This is used for reports linechart.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+
+**Method** : ”POST”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+* Funnel Chart
+
+**Expression**: /r/fc
+
+**Description** :  This is used for reports funnelchart.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+
+**Method** : ”POST”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
+
+* Pie Chart
+
+**Expression**: /r/pie
+
+**Description** :  This is used for reports piechart.
+
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
+
+**Rest Method**: POST
+
+> A sample is shown here
+
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+
+**Method** : ”POST”
+
+json object - raw data
+
+{{raw-data}}
+{{image}}
