@@ -15,7 +15,7 @@ JOINS
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/s/joins](https://dbapp.500apps.com/v2/s/joins)
+**Trigger Expression** : https://dbapp.500apps.com/v2/s/joins
 
 **Method** : ”POST”
 
@@ -100,7 +100,7 @@ FILTERS
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/s/filters](https://dbapp.500apps.com/v2/s/filters)
+**Trigger Expression** : https://dbapp.500apps.com/v2/s/filters
 
 **Method** : ”POST”
 
@@ -143,7 +143,7 @@ SEARCH
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/s/multi](https://dbapp.500apps.com/v2/s/multi)
+**Trigger Expression** : https://dbapp.500apps.com/v2/s/multi
 
 **Method** : ”POST”
 
@@ -176,7 +176,7 @@ IMPORT
 
 - A sample is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/m/import](https://dbapp.500apps.com/v2/m/import)
+**Trigger Expression** : https://dbapp.500apps.com/v2/m/import
 
 **Method** : ”POST”
 
@@ -209,7 +209,7 @@ CUSTOM QUERIES
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/11](https://dbapp.500apps.com/v2/cq/11)
+**Trigger Expression** : https://dbapp.500apps.com/v2/cq/11
 
 **Method** : ”GET”
 
@@ -234,7 +234,7 @@ CUSTOM QUERIES INSERT
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/6](https://dbapp.500apps.com/v2/cq/6)
+**Trigger Expression** : https://dbapp.500apps.com/v2/cq/6
 
 **Method** : ”POST”
 
@@ -263,7 +263,7 @@ CUSTOM QUERIES UPDATE
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/7](https://dbapp.500apps.com/v2/cq/7)
+**Trigger Expression** : https://dbapp.500apps.com/v2/cq/7
 
 **Method** : ”PUT”
 
@@ -284,7 +284,7 @@ CUSTOM QUERIES UPDATE
 REPORTS
 --------
 
-* Bar Chart
+**Bar Chart**
 
 **Expression**: /r/bar
 
@@ -296,7 +296,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+**Trigger Expression** : https://dbapp.500apps.com/v2/r/bar
 
 **Method** : ”POST”
 
@@ -320,7 +320,7 @@ REPORTS
 
 ![Image](images/bar.png "icon")
 
-* Line Chart
+**Line Chart**
 
 **Expression**: /r/line
 
@@ -332,7 +332,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/line](https://dbapp.500apps.com/v2/r/line)
+**Trigger Expression** : https://dbapp.500apps.com/v2/r/line
 
 **Method** : ”POST”
 
@@ -356,7 +356,7 @@ REPORTS
 
 ![Image](images/line.png "icon")
 
-* Funnel Chart
+**Funnel Chart**
 
 **Expression**: /r/fc
 
@@ -368,7 +368,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/fc](https://dbapp.500apps.com/v2/r/fc)
+**Trigger Expression** : https://dbapp.500apps.com/v2/r/fc
 
 **Method** : ”POST”
 
@@ -390,7 +390,7 @@ REPORTS
 
 ![Image](images/funnel.png "icon")
 
-* Pie Chart
+**Pie Chart**
 
 **Expression**: /r/pie
 
@@ -402,7 +402,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/pie](https://dbapp.500apps.com/v2/r/pie)
+**Trigger Expression** : https://dbapp.500apps.com/v2/r/pie
 
 **Method** : ”POST”
 
