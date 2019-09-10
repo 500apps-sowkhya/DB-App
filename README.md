@@ -13,7 +13,7 @@ JOINS
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/s/joins](https://dbapp.500apps.com/v2/s/joins)
 
@@ -98,7 +98,7 @@ FILTERS
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/s/filters](https://dbapp.500apps.com/v2/s/filters)
 
@@ -141,7 +141,7 @@ SEARCH
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/s/multi](https://dbapp.500apps.com/v2/s/multi)
 
@@ -163,27 +163,6 @@ SEARCH
 
 *******************************************
 
-DESC
-------
-
-**Expression**: /m/desc/{table_name}
-
-**Description** : Describe is used to describe the metadata of table. This will describe the structure of a table.
-
-**Input Type(JSON/Json Array/Form-Data)** : path
-
-**Rest Method**: GET
-
-> A sample is shown here
-
-**Trigger Expression** : [https://dbapp.500apps.com/v2/m/desc/ticket](https://dbapp.500apps.com/v2/m/desc/ticket)
-
-**Method** : ”GET”
-
-![Image](images/desc.png "icon")
-
-**********************************************
-
 IMPORT
 ------
 
@@ -195,7 +174,7 @@ IMPORT
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/m/import](https://dbapp.500apps.com/v2/m/import)
 
@@ -215,49 +194,6 @@ fields : first_name,last_name
 
 ![Image](images/import.png "icon")
 
-*****************************************************
-
-EXPORT
-------
-
-**Expression**: /m/export
-
-**Description** : This  is used for export data to csv file.
-
-**Input Type(JSON/Json Array/Form-Data)** : params,json object - raw data
-
-**Rest Method**: POST
-
-> A sample is shown here
-
-**Trigger Expression** : [https://dbapp.500apps.com/v2/m/export](https://dbapp.500apps.com/v2/m/export)
-
-**Method** : ”POST”
-
-**params**
-
-bucket_name:temptrash
-
-file_name:file1
-
-**json object - raw data**
-
-{"data":{
-
-"fields": "c.id,c.first_name,c.last_name,c.email",
-
-"tables":[{"contact":"c"},{"contact_phone":"cp"},{"contact_email":"ce"},{"company":"com"}],
-
-"join":[{"join_type":"join", "table1":"c","join_column1":"id","table2":"cp","join_column2":"contact_id"},
-{"join_type":"left join", "table1":"c","join_column1":"id","table2":"ce","join_column2":"contact_id"},
-{"join_type":"left join", "table1":"c","join_column1":"id","table2":"com","join_column2":"contact_id"}],
-
-"order_by":"id",
-
-"limit":"9"}}
-
-![Image](images/export.png "icon")
-
 ****************************************************
 
 CUSTOM QUERIES
@@ -271,7 +207,7 @@ CUSTOM QUERIES
 
 **Rest Method**: GET
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/cq/11](https://dbapp.500apps.com/v2/cq/11)
 
@@ -296,7 +232,7 @@ CUSTOM QUERIES INSERT
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/cq/6](https://dbapp.500apps.com/v2/cq/6)
 
@@ -325,7 +261,7 @@ CUSTOM QUERIES UPDATE
 
 **Rest Method**: PUT
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/cq/7](https://dbapp.500apps.com/v2/cq/7)
 
@@ -335,10 +271,10 @@ CUSTOM QUERIES UPDATE
 
 {
 
-	"update_name":"test",
-  
-	"id":"4"
-  
+"update_name":"test",
+
+ "id":"4"  
+ 
 }
 
 ![Image](images/customupdate.png "icon")
@@ -358,7 +294,7 @@ REPORTS
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
 
@@ -394,7 +330,7 @@ REPORTS
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/r/line](https://dbapp.500apps.com/v2/r/line)
 
@@ -430,7 +366,7 @@ REPORTS
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/r/fc](https://dbapp.500apps.com/v2/r/fc)
 
@@ -464,7 +400,7 @@ REPORTS
 
 **Rest Method**: POST
 
-> A sample is shown here
+- A sample collection is shown below
 
 **Trigger Expression** : [https://dbapp.500apps.com/v2/r/pie](https://dbapp.500apps.com/v2/r/pie)
 
