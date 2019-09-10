@@ -17,7 +17,15 @@ JOINS
 
 json object - raw data
 
-{{raw-data}}
+{"data":{
+
+"fields": "t.id,count(tn.is_reply) as count",
+
+"tables":[{"ticket_note":"tn"},{"ticket":"t"}],
+
+"join":[{"join_type":"left join", "table1":"tn","join_column1":"ticket_id","table2":"t","join_column2":"id"}],
+
+"group_by":"t.id"}}
 
 ![Image](images/joins.png "icon")
 **************************************************
