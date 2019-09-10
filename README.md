@@ -102,7 +102,25 @@ FILTERS
 
 **json object - raw data**
 
-{{raw-data}}
+{"data":{
+
+"fields":"distinct c.id,c.first_name,c.last_name,c.tag,c.custom_value",
+
+"tables":[{"contact_tag":"ct"},{"contact_details":"c"}],
+
+"join":[{"join_type":"join","table1":"ct","join_column1":"contact_id","table2":"c","join_column2":"id"}],
+
+"filters":[{"filter_condition":"","table_name":"ct","field_name":"tag_id","operator":"IN","value1":"'2','5'","value2":""}],
+
+"jsonsearch":[{"filter_condition":"and","table_name":"c","field_name":"tag","operator":"SEARCH_VALUE","value1":"agile","value2":""}],
+
+"order_by":"c.id",
+
+"order_by_type":"desc",
+
+"limit":"10",
+
+"offset":"0"}}
 
 ![Image](images/filters.png "icon")
 
@@ -125,9 +143,17 @@ SEARCH
 
 **Method** : ”POST”
 
-json object - raw data
+**json object - raw data**
 
-{{raw-data}}
+{"fields":["json_object('name',subject,'email',requester_email)",
+
+"json_object('name',concat(ifnull(first_name,''),' ',ifnull(last_name,'')))"],
+
+"tablename":["ticket","contact"],
+
+"where":[{"search_by":"subject,requester_email"},{"search_by":"first_name,last_name,email"}],
+
+"search":"somi"}
 
 ![Image](images/search.png "icon")
 
@@ -150,8 +176,6 @@ DESC
 
 **Method** : ”GET”
 
-{{raw-data}}
-
 ![Image](images/desc.png "icon")
 
 **********************************************
@@ -173,11 +197,17 @@ IMPORT
 
 **Method** : ”POST”
 
-params
+**params**
 
-form data
+file_name:contact_import (5).csv
 
-{{raw-data}}
+bucket_name:temptrash
+
+table_name:staging
+
+**form data**
+
+fields : first_name,last_name
 
 ![Image](images/import.png "icon")
 
@@ -200,11 +230,27 @@ EXPORT
 
 **Method** : ”POST”
 
-params
+**params**
 
-json object - raw data
+bucket_name:temptrash
 
-{{raw-data}}
+file_name:file1
+
+**json object - raw data**
+
+{"data":{
+
+"fields": "c.id,c.first_name,c.last_name,c.email",
+
+"tables":[{"contact":"c"},{"contact_phone":"cp"},{"contact_email":"ce"},{"company":"com"}],
+
+"join":[{"join_type":"join", "table1":"c","join_column1":"id","table2":"cp","join_column2":"contact_id"},
+{"join_type":"left join", "table1":"c","join_column1":"id","table2":"ce","join_column2":"contact_id"},
+{"join_type":"left join", "table1":"c","join_column1":"id","table2":"com","join_column2":"contact_id"}],
+
+"order_by":"id",
+
+"limit":"9"}}
 
 ![Image](images/export.png "icon")
 
@@ -227,9 +273,9 @@ CUSTOM QUERIES
 
 **Method** : ”GET”
 
-params
+**params**
 
-{{raw-data}}
+boolean_value=true
 
 ![Image](images/custom.png "icon")
 
@@ -248,15 +294,17 @@ CUSTOM QUERIES INSERT
 
 > A sample is shown here
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/7](https://dbapp.500apps.com/v2/cq/7)
+**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/6](https://dbapp.500apps.com/v2/cq/6)
 
 **Method** : ”POST”
 
-params
+**json object - raw data**
 
-json object - raw data
+{
 
-{{raw-data}}
+"fields":"'raju'"
+
+}
 
 ![Image](images/custominsert.png "icon")
 
@@ -275,13 +323,19 @@ CUSTOM QUERIES UPDATE
 
 > A sample is shown here
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/8](https://dbapp.500apps.com/v2/cq/8)
+**Trigger Expression** : [https://dbapp.500apps.com/v2/cq/7](https://dbapp.500apps.com/v2/cq/7)
 
 **Method** : ”PUT”
 
-json object - raw data
+**json object - raw data**
 
-{{raw-data}}
+{
+
+	"update_name":"test",
+  
+	"id":"4"
+  
+}
 
 ![Image](images/customupdate.png "icon")
 
