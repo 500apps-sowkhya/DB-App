@@ -360,9 +360,23 @@ REPORTS
 
 **Method** : ”POST”
 
-json object - raw data
+**json object - raw data**
 
-{{raw-data}}
+{"data":{ 
+
+"x_axis": "date_format((t.created_time),'%Y-%m')",
+
+"function":"count",
+
+"y_axis":"t.id",
+
+"tables":[{"ticket":"t"}],
+
+"where":"month(t.created_time)=month(current_date)-1",
+
+"order_by":"t.created_time",
+
+"order_by_type":"desc"}}
 
 ![Image](images/bar.png "icon")
 
@@ -378,13 +392,27 @@ json object - raw data
 
 > A sample is shown here
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/line](https://dbapp.500apps.com/v2/r/line)
 
 **Method** : ”POST”
 
-json object - raw data
+**json object - raw data**
 
-{{raw-data}}
+{"data":{ 
+
+"x_axis": "date_format((t.created_time),'%Y-%m')",
+
+"function":"count",
+
+"y_axis":"t.id",
+
+"tables":[{"ticket":"t"}],
+
+"where":"month(t.created_time)=month(current_date)-1",
+
+"order_by":"t.created_time",
+
+"order_by_type":"desc"}}
 
 ![Image](images/line.png "icon")
 
@@ -400,13 +428,25 @@ json object - raw data
 
 > A sample is shown here
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/fc](https://dbapp.500apps.com/v2/r/fc)
 
 **Method** : ”POST”
 
-json object - raw data
+**json object - raw data**
 
-{{raw-data}}
+{"data":{ 
+
+"x_axis": "t.id",
+
+"function":"count",
+
+"y_axis":"t.id",
+
+"tables":[{"ticket":"t"},{"`contact`":"c"}],
+
+"join":[{"join_type":"join","table1":"t","join_column1":"contact_id","table2":"c","join_column2":"id"}],
+
+"group_by":"t.contact_id"}}
 
 ![Image](images/funnel.png "icon")
 
@@ -422,10 +462,28 @@ json object - raw data
 
 > A sample is shown here
 
-**Trigger Expression** : [https://dbapp.500apps.com/v2/r/bar](https://dbapp.500apps.com/v2/r/bar)
+**Trigger Expression** : [https://dbapp.500apps.com/v2/r/pie](https://dbapp.500apps.com/v2/r/pie)
 
 **Method** : ”POST”
 
 **json object - raw data**
+
+{"data": {
+
+"Aggregate": "count",
+
+"pie": "tc.name",
+
+"percentage_by": "t.id",
+
+"name": "high,medium,low",
+
+"tables": {"ticket_category": "tc","ticket": "t"},
+
+"tables": [{"ticket_category": "tc"},{"ticket": "t"}],
+
+"join": [{"join_type": "join","table1": "tc","join_column1": "id","table2": "t","join_column2": "priority"}]
+
+}}
 
 ![Image](images/pie.png "icon")
