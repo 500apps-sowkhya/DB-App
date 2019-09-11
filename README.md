@@ -4,12 +4,12 @@
  
  In the application properties, Need to set the following key-values;
  
- **1. id_type** - Have to give tenant_id/domain_id based on the column name which is present in your schema tables.
+ **1. id_type** - have to give tenant_id/domain_id based on the column name which is present in your schema tables.
  
  ![Image](images/keyvalueaction.png "icon")
  ![Image](images/id_type.png "icon")
  
- **2. tablename** - Need mention the table names for which the actions(insert,update,delete....) to be performed. The table names which you give in the trigger path must match the tablenames which we give here then only the result is retrived.
+ **2. tablename** - need to mention the table names for which the crud operations to be performed. The table names which you give in the trigger path must match the tablenames which we give here then only the result is retrived.
  
  ![Image](images/tablename.png "icon")
  
