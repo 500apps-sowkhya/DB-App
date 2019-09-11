@@ -2,14 +2,14 @@
 
  Generic DB App will be useful for programmers who work with database operations.
  
- In the application properties, we hve to set the following key-values;
+ In the application properties, Need to set the following key-values;
  
- **1. id_type** - you have to give tenant_id/domain_id based on the column name which is present in your schema tables.
+ **1. id_type** - Have to give tenant_id/domain_id based on the column name which is present in your schema tables.
  
  ![Image](images/keyvalueaction.png "icon")
  ![Image](images/id_type.png "icon")
  
- **2. tablename** - here you have to mention the table names for which the actions(insert,update,delete....) to be performed. The table names which you give in the trigger path must match the tablenames which we give here then only the result is retrived.
+ **2. tablename** - Need mention the table names for which the actions(insert,update,delete....) to be performed. The table names which you give in the trigger path must match the tablenames which we give here then only the result is retrived.
  
  ![Image](images/tablename.png "icon")
  
@@ -25,7 +25,7 @@
  
  ![Image](images/customprops.png "icon")
  
- **6. Limit** - when you don't give the limit in the form data while retrieving data or in the application properties as mentioned below, by deafult the limit is set to 100 to limit the retrived records.
+ **6. Limit** - when you don't give the limit in the form data while retrieving data or in the application properties as mentioned below, else by deafult the limit is set to 100 to limit the retrived records.
  
  ![Image](images/limit.png "icon")
 
