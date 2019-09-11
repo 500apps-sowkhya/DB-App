@@ -25,7 +25,7 @@
  
  ![Image](images/customprops.png "icon")
  
- **6. Limit** - when you don't give the limit in the form data while retrieving data, by deafult the limit is set to 100 to limit the retrived records.
+ **6. Limit** - when you don't give the limit in the form data while retrieving data or in the application properties as mentioned below, by deafult the limit is set to 100 to limit the retrived records.
  
  ![Image](images/limit.png "icon")
 
@@ -52,7 +52,7 @@ JOINS
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/s/joins
+**Trigger Expression** : /s/joins
 
 **Method** : ”POST”
 
@@ -76,6 +76,8 @@ JOINS
 * group_by - is used to put together records that have the same field values.
 * having - condition is used to specify criteria when working using the group_by keyword.
 * order_by - is used to specify the sort order of the result set.
+
+**Rest Call** - https://dbapp.500apps.com/v2/s/joins
 
 ![Image](images/joins.png "icon")
 
@@ -146,7 +148,7 @@ FILTERS
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/s/filters
+**Trigger Expression** : /s/filters
 
 **Method** : ”POST”
 
@@ -172,6 +174,8 @@ FILTERS
 
 "offset":"0"}}
 
+**Rest Call** - https://dbapp.500apps.com/v2/s/filters
+
 ![Image](images/filters.png "icon")
 
 ***************************
@@ -189,7 +193,7 @@ SEARCH
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/s/multi
+**Trigger Expression** : s/multi
 
 **Method** : ”POST”
 
@@ -204,6 +208,8 @@ SEARCH
 "where":[{"search_by":"subject,requester_email"},{"search_by":"first_name,last_name,email"}],
 
 "search":"somi"}
+
+**Rest Call** - https://dbapp.500apps.com/v2/s/multi
 
 ![Image](images/search.png "icon")
 
@@ -222,7 +228,7 @@ IMPORT
 
 - A sample is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/m/import
+**Trigger Expression** : m/import
 
 **Method** : ”POST”
 
@@ -237,6 +243,8 @@ table_name:staging
 **form data**
 
 fields : first_name,last_name
+
+**Rest Call** - https://dbapp.500apps.com/v2/m/import
 
 ![Image](images/import.png "icon")
 
@@ -255,13 +263,15 @@ CUSTOM QUERIES
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/cq/11
+**Trigger Expression** : cq/11
 
 **Method** : ”GET”
 
 **params**
 
 boolean_value=true
+
+**Rest Call** - https://dbapp.500apps.com/v2/cq/11
 
 ![Image](images/custom.png "icon")
 
@@ -280,7 +290,7 @@ CUSTOM QUERIES INSERT
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/cq/6
+**Trigger Expression** : /cq/6
 
 **Method** : ”POST”
 
@@ -291,6 +301,8 @@ CUSTOM QUERIES INSERT
 "fields":"'raju'"
 
 }
+
+**Rest Call** - https://dbapp.500apps.com/v2/cq/6
 
 ![Image](images/custominsert.png "icon")
 
@@ -309,7 +321,7 @@ CUSTOM QUERIES UPDATE
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/cq/7
+**Trigger Expression** : /cq/7
 
 **Method** : ”PUT”
 
@@ -322,6 +334,8 @@ CUSTOM QUERIES UPDATE
  "id":"4"  
  
 }
+
+**Rest Call** - https://dbapp.500apps.com/v2/cq/7
 
 ![Image](images/customupdate.png "icon")
 
@@ -342,7 +356,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/r/bar
+**Trigger Expression** : /r/bar
 
 **Method** : ”POST”
 
@@ -363,6 +377,8 @@ REPORTS
 "order_by":"t.created_time",
 
 "order_by_type":"desc"}}
+
+**Rest Call** - https://dbapp.500apps.com/v2/r/bar
 
 ![Image](images/bar.png "icon")
 
@@ -378,7 +394,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/r/line
+**Trigger Expression** : /r/line
 
 **Method** : ”POST”
 
@@ -400,6 +416,8 @@ REPORTS
 
 "order_by_type":"desc"}}
 
+**Rest Call** - https://dbapp.500apps.com/v2/r/line
+
 ![Image](images/line.png "icon")
 
 **Funnel Chart**
@@ -414,7 +432,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/r/fc
+**Trigger Expression** : /r/fc
 
 **Method** : ”POST”
 
@@ -434,6 +452,8 @@ REPORTS
 
 "group_by":"t.contact_id"}}
 
+**Rest Call** - https://dbapp.500apps.com/v2/r/fc
+
 ![Image](images/funnel.png "icon")
 
 **Pie Chart**
@@ -448,7 +468,7 @@ REPORTS
 
 - A sample collection is shown below
 
-**Trigger Expression** : https://dbapp.500apps.com/v2/r/pie
+**Trigger Expression** : /r/pie
 
 **Method** : ”POST”
 
@@ -471,5 +491,7 @@ REPORTS
 "join": [{"join_type": "join","table1": "tc","join_column1": "id","table2": "t","join_column2": "priority"}]
 
 }}
+
+**Rest Call** - https://dbapp.500apps.com/v2/r/pie
 
 ![Image](images/pie.png "icon")
