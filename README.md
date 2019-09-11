@@ -25,10 +25,22 @@
  
  ![Image](images/customprops.png "icon")
  
- **6. Limit** - when you don't give the limit in the form data while retrieving data, by deafult the limit is set to 100 to limit the retrived records
+ **6. Limit** - when you don't give the limit in the form data while retrieving data, by deafult the limit is set to 100 to limit the retrived records.
+ 
+ ![Image](images/limit.png "icon")
 
 JOINS
 -----------
+
+ Joins are used to combine data or rows from two or more tables based on a common field between them.
+
+ There are different types of joins available in SQL −
+
+**JOIN** − returns rows when there is a match in both tables.
+
+**LEFT JOIN** − returns all rows from the left table, even if there are no matches in the right table.
+
+**RIGHT JOIN** − returns all rows from the right table, even if there are no matches in the left table.
 
 **Expression**: /s/joins
 
@@ -55,6 +67,15 @@ JOINS
 "join":[{"join_type":"left join", "table1":"tn","join_column1":"ticket_id","table2":"t","join_column2":"id"}],
 
 "group_by":"t.id"}}
+
+
+* fields - columns are to be specified, else "*" is directly appended automatically 
+* tables - are mandatory and must contain at least two tables
+* join_type - the type of join must be specified(join,left join,right join).
+* where - condition is optional, it can be used to specify criteria in the result set returned from the query.
+* group_by - is used to put together records that have the same field values.
+* having - condition is used to specify criteria when working using the group_by keyword.
+* order_by - is used to specify the sort order of the result set.
 
 ![Image](images/joins.png "icon")
 
@@ -311,9 +332,9 @@ REPORTS
 
 **Bar Chart**
 
-**Expression**: /r/bar
+**Description** : A bar chart is a chart that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent.
 
-**Description** :  This is used for reports barchart.
+**Expression**: /r/bar
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
@@ -347,9 +368,9 @@ REPORTS
 
 **Line Chart**
 
-**Expression**: /r/line
+**Description** : A line chart is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments.
 
-**Description** :  This is used for reports linechart.
+**Expression**: /r/line
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
@@ -383,9 +404,9 @@ REPORTS
 
 **Funnel Chart**
 
-**Expression**: /r/fc
+**Description** : Funnel charts are a type of chart, often used to represent stages in a sales process and show the amount of potential revenue for each stage. This type of chart can also be useful in identifying potential problem areas in an organization's sales processes.
 
-**Description** :  This is used for reports funnelchart.
+**Expression**: /r/fc
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
@@ -417,9 +438,9 @@ REPORTS
 
 **Pie Chart**
 
-**Expression**: /r/pie
+**Description** :  A pie chart is a circular statistical graphic, which is divided into slices to illustrate numerical proportion.
 
-**Description** :  This is used for reports piechart.
+**Expression**: /r/pie
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
