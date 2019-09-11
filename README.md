@@ -24,6 +24,8 @@
  **5. custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
  
  ![Image](images/customprops.png "icon")
+ 
+ **6. Limit** - when you don't give the limit in the form data while retrieving data, by deafult the limit is set to 100 to limit the retrived records
 
 JOINS
 -----------
