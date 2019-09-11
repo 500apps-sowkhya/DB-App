@@ -1,6 +1,6 @@
 
 
- Generic DB App will be useful for programmers who work with database operations.......
+ Generic DB App will be useful for programmers who work with database operations.
  
  In the application properties, Need to set the following key-values;
  
