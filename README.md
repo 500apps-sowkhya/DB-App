@@ -75,7 +75,11 @@ JOINS
 
 **Rest Call** - https://dbapp.500apps.com/v2/s/joins
 
-![Image](images/joins.png "icon")
+![Image](images/joinsdata.png "icon")
+
+**returns**
+
+![Image](images/joinsres.png "icon")
 
 **************************************************
 
@@ -168,7 +172,11 @@ FILTERS
 
 **Rest Call** - https://dbapp.500apps.com/v2/s/filters
 
-![Image](images/filters.png "icon")
+![Image](images/filtersdata.png "icon")
+
+**returns**
+
+![Image](images/filtersres.png "icon")
 
 ***************************
 
@@ -208,7 +216,7 @@ IMPORT
 
 **Expression**: /m/import
 
-**Description** : This  is used for import data from csv file.
+**Description** : This is used for import data from csv file into specified table.
 
 **Input Type(JSON/Json Array/Form-Data)** : params,form data
 
@@ -230,7 +238,11 @@ fields : first_name,last_name
 
 **Rest Call** - https://dbapp.500apps.com/v2/m/import
 
-![Image](images/import.png "icon")
+![Image](images/importdata.png "icon")
+
+**returns**
+
+![Image](images/importres.png "icon")
 
 ****************************************************
 
@@ -253,7 +265,11 @@ boolean_value=true
 
 **Rest Call** - https://dbapp.500apps.com/v2/cq/11
 
-![Image](images/custom.png "icon")
+![Image](images/customdata.png "icon")
+
+**returns**
+
+![Image](images/customres.png "icon")
 
 **************************************************
 
@@ -280,7 +296,11 @@ CUSTOM QUERIES INSERT
 
 **Rest Call** - https://dbapp.500apps.com/v2/cq/6
 
-![Image](images/custominsert.png "icon")
+![Image](images/custominsertdata.png "icon")
+
+**returns**
+
+![Image](images/custominsertres.png "icon")
 
 **************************************************
 
@@ -309,7 +329,11 @@ CUSTOM QUERIES UPDATE
 
 **Rest Call** - https://dbapp.500apps.com/v2/cq/7
 
-![Image](images/customupdate.png "icon")
+![Image](images/customupdatedata.png "icon")
+
+**returns**
+
+![Image](images/customupdateres.png "icon")
 
 ************************************************************
 
@@ -348,7 +372,11 @@ REPORTS
 
 **Rest Call** - https://dbapp.500apps.com/v2/r/bar
 
-![Image](images/bar.png "icon")
+![Image](images/bardata.png "icon")
+
+**returns**
+
+![Image](images/barres.png "icon")
 
 **Line Chart**
 
@@ -382,7 +410,11 @@ REPORTS
 
 **Rest Call** - https://dbapp.500apps.com/v2/r/line
 
-![Image](images/line.png "icon")
+![Image](images/linedata.png "icon")
+
+**returns**
+
+![Image](images/lineres.png "icon")
 
 **Funnel Chart**
 
@@ -414,7 +446,11 @@ REPORTS
 
 **Rest Call** - https://dbapp.500apps.com/v2/r/fc
 
-![Image](images/funnel.png "icon")
+![Image](images/piedata.png "icon")
+
+**returns**
+
+![Image](images/pieres.png "icon")
 
 **Pie Chart**
 
@@ -450,4 +486,8 @@ REPORTS
 
 **Rest Call** - https://dbapp.500apps.com/v2/r/pie
 
-![Image](images/pie.png "icon")
+![Image](images/funneldata.png "icon")
+
+**returns**
+
+![Image](images/funnelres.png "icon")
