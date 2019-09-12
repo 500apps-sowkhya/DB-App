@@ -50,7 +50,7 @@ JOINS
 
 **Rest Method**: POST
 
-- A sample collection is shown below
+ 
 
 **Trigger Expression** : /s/joins
 
@@ -146,7 +146,6 @@ FILTERS
 
 **Rest Method**: POST
 
-- A sample collection is shown below
 
 **Trigger Expression** : /s/filters
 
@@ -190,8 +189,6 @@ SEARCH
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
 **Rest Method**: POST
-
-- A sample collection is shown below
 
 **Trigger Expression** : s/multi
 
@@ -261,7 +258,6 @@ CUSTOM QUERIES
 
 **Rest Method**: GET
 
-- A sample collection is shown below
 
 **Trigger Expression** : cq/11
 
@@ -287,8 +283,7 @@ CUSTOM QUERIES INSERT
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
 **Rest Method**: POST
-
-- A sample collection is shown below
+ 
 
 **Trigger Expression** : /cq/6
 
@@ -354,7 +349,7 @@ REPORTS
 
 **Rest Method**: POST
 
-- A sample collection is shown below
+ 
 
 **Trigger Expression** : /r/bar
 
@@ -392,8 +387,7 @@ REPORTS
 
 **Rest Method**: POST
 
-- A sample collection is shown below
-
+ 
 **Trigger Expression** : /r/line
 
 **Method** : ”POST”
@@ -466,7 +460,6 @@ REPORTS
 
 **Rest Method**: POST
 
-- A sample collection is shown below
 
 **Trigger Expression** : /r/pie
 
