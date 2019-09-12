@@ -48,10 +48,6 @@ JOINS
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-**Rest Method**: POST
-
- 
-
 **Trigger Expression** : /s/joins
 
 **Method** : ”POST”
@@ -144,9 +140,6 @@ FILTERS
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-**Rest Method**: POST
-
-
 **Trigger Expression** : /s/filters
 
 **Method** : ”POST”
@@ -188,8 +181,6 @@ SEARCH
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-**Rest Method**: POST
-
 **Trigger Expression** : s/multi
 
 **Method** : ”POST”
@@ -220,10 +211,6 @@ IMPORT
 **Description** : This  is used for import data from csv file.
 
 **Input Type(JSON/Json Array/Form-Data)** : params,form data
-
-**Rest Method**: POST
-
-- A sample is shown below
 
 **Trigger Expression** : m/import
 
@@ -256,9 +243,6 @@ CUSTOM QUERIES
 
 **Input Type(JSON/Json Array/Form-Data)** : params
 
-**Rest Method**: GET
-
-
 **Trigger Expression** : cq/11
 
 **Method** : ”GET”
@@ -280,10 +264,7 @@ CUSTOM QUERIES INSERT
 
 **Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
-**Input Type(JSON/Json Array/Form-Data)** : json object - raw data
-
-**Rest Method**: POST
- 
+**Input Type(JSON/Json Array/Form-Data)** : json object - raw data 
 
 **Trigger Expression** : /cq/6
 
@@ -311,10 +292,6 @@ CUSTOM QUERIES UPDATE
 **Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
-
-**Rest Method**: PUT
-
-- A sample collection is shown below
 
 **Trigger Expression** : /cq/7
 
@@ -346,10 +323,6 @@ REPORTS
 **Expression**: /r/bar
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
-
-**Rest Method**: POST
-
- 
 
 **Trigger Expression** : /r/bar
 
@@ -385,9 +358,6 @@ REPORTS
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-**Rest Method**: POST
-
- 
 **Trigger Expression** : /r/line
 
 **Method** : ”POST”
@@ -422,10 +392,6 @@ REPORTS
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-**Rest Method**: POST
-
-- A sample collection is shown below
-
 **Trigger Expression** : /r/fc
 
 **Method** : ”POST”
@@ -457,9 +423,6 @@ REPORTS
 **Expression**: /r/pie
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
-
-**Rest Method**: POST
-
 
 **Trigger Expression** : /r/pie
 
