@@ -38,9 +38,9 @@ JOINS
 
 **JOIN** − returns rows when there is a match in both tables.
 
-**LEFT JOIN** − returns all rows from the left table, even if there are no matches in the right table.
+**LEFT JOIN** − returns all rows from the left table and matched rows from the right table, even if there are no matches in the right table.
 
-**RIGHT JOIN** − returns all rows from the right table, even if there are no matches in the left table.
+**RIGHT JOIN** − returns all rows from the right table and matched rows from the left table, even if there are no matches in the left table.
 
 **Expression**: /s/joins
 
@@ -69,9 +69,9 @@ JOINS
 * tables - are mandatory and must contain at least two tables
 * join_type - the type of join must be specified(join,left join,right join).
 * where - condition is optional, it can be used to specify criteria in the result set returned from the query.
-* group_by - is used to put together records that have the same field values.
-* having - condition is used to specify criteria when working using the group_by keyword.
-* order_by - is used to specify the sort order of the result set.
+* group_by - is used to put together records that have the same field values and this condition is optional.
+* having - condition is used to specify criteria when working using the group_by keyword and this condition is optional.
+* order_by - is used to specify the sort order of the result set and this condition is optional.
 
 **Rest Call** - https://dbapp.500apps.com/v2/s/joins
 
@@ -185,7 +185,7 @@ SEARCH
 
 **Expression**: /s/multi
 
-**Description** : Let you do the search for multiple entities once at time, this  will useful.
+**Description** : Let you do the search for multiple entities once at time when there is either relation or no relation between those multiple entities, this  will useful.
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
@@ -220,7 +220,7 @@ IMPORT
 
 **Expression**: /m/import
 
-**Description** : This is used for import data from csv file into specified table.
+**Description** : This is used for import data from csv file into staging table.
 
 **Input Type(JSON/Json Array/Form-Data)** : params,form data
 
@@ -253,13 +253,11 @@ fields : first_name,last_name
 CUSTOM QUERIES
 ------
 
-**Expression**: /cq/{entity_id}
-
 **Description** : In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
 **Input Type(JSON/Json Array/Form-Data)** : params
 
-**Trigger Expression** : cq/11
+**Trigger Expression** : cq/{customQueryId}
 
 **Method** : ”GET”
 
@@ -280,13 +278,11 @@ boolean_value=true
 CUSTOM QUERIES INSERT
 ----------------------
 
-**Expression**: /cq/{entity_id}
-
 **Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data 
 
-**Trigger Expression** : /cq/6
+**Trigger Expression** : cq/{customQueryId}
 
 **Method** : ”POST”
 
@@ -311,13 +307,11 @@ CUSTOM QUERIES INSERT
 CUSTOM QUERIES UPDATE
 ----------------------
 
-**Expression**: /cq/{entity_id}
-
 **Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data
 
-**Trigger Expression** : /cq/7
+**Trigger Expression** : cq/{customQueryId}
 
 **Method** : ”PUT”
 
