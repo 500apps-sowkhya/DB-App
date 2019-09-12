@@ -207,7 +207,11 @@ SEARCH
 
 **Rest Call** - https://dbapp.500apps.com/v2/s/multi
 
-![Image](images/search.png "icon")
+![Image](images/searchdata.png "icon")
+
+**returns**
+
+![Image](images/searchres.png "icon")
 
 *******************************************
 
