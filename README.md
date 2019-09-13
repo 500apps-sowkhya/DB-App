@@ -21,7 +21,7 @@
  
  ![Image](images/version.png "icon")
  
- **5. Limit** - by deafult the limit is set to 100 to limit the retrived records when you don't give the limit in the query params while retrieving data or in the application properties as mentioned below. If we need to retrieve more than 100 records the number is to be mentioned in the app properties as shown below
+ **5. Limit** - by default the limit is set to 100 to limit the retrived records when you don't give the limit in the query params while retrieving data or in the application properties as mentioned below. If we need to retrieve more than 100 records the number is to be mentioned in the app properties as shown below
  
  ![Image](images/limit.png "icon")
 
@@ -253,7 +253,7 @@ CUSTOM QUERIES
 
  **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
  
-  /home/agile/Desktop/select_custom_queries.png
+  ![Image](images/select_custom_queries.png "icon")
 
 **Description** : In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
