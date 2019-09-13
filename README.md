@@ -29,6 +29,8 @@ JOINS
 -----------
 
  Joins are used to combine data or rows from two or more tables based on a common field between them.
+ Joins help retrieving data from two or more database tables. 
+ The tables are mutually related using primary and foreign keys.
 
  There are different types of joins available in SQL −
 
