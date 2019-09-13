@@ -278,6 +278,10 @@ boolean_value=true
 CUSTOM QUERIES INSERT
 ----------------------
 
+ **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
+ 
+ ![Image](images/customprops.png "icon")
+
 **Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
 **Input Type(JSON/Json Array/Form-Data)** : json object - raw data 
@@ -306,6 +310,10 @@ CUSTOM QUERIES INSERT
 
 CUSTOM QUERIES UPDATE
 ----------------------
+
+ **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
+ 
+ ![Image](images/customprops.png "icon")
 
 **Description** :  In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
