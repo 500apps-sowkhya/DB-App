@@ -253,6 +253,7 @@ CUSTOM QUERIES
 
  **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
  
+ 
   ![Image](images/select_custom_queries.png "icon")
 
 **Description** : In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
@@ -281,6 +282,7 @@ CUSTOM QUERIES INSERT
 ----------------------
 
  **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
+ 
  
   ![Image](images/insert_custom_queries.png "icon")
 
@@ -314,6 +316,7 @@ CUSTOM QUERIES UPDATE
 ----------------------
 
  **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
+ 
  
   ![Image](images/update_custom_queries.png "icon")
 
