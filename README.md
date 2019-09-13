@@ -9,7 +9,7 @@
  ![Image](images/keyvalueaction.png "icon")
  ![Image](images/id_type.png "icon")
  
- **2. tablename** - need to mention the table names for which the crud operations to be performed. The table names which you give in the trigger path must match the tablenames which we give here then only the result is retrived.
+ **2. tablename** - need to mention the table names for which the crud operations to be performed. The table names which you give in the trigger path must match the tablenames which we give here then only the result is retrieved.
  
  ![Image](images/tablename.png "icon")
  
@@ -21,7 +21,7 @@
  
  ![Image](images/version.png "icon")
  
- **5. Limit** - by default the limit is set to 100 to limit the retrived records when you don't give the limit in the query params while retrieving data or in the application properties as mentioned below. If we need to retrieve more than 100 records the number is to be mentioned in the app properties as shown below
+ **5. Limit** - by default the limit is set to 100 to limit the retrieved records when you don't give the limit in the query params while retrieving data or in the application properties as mentioned below. If we need to retrieve more than 100 records the number is to be mentioned in the app properties as shown below
  
  ![Image](images/limit.png "icon")
 
