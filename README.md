@@ -1,5 +1,5 @@
 
-
+ 
  Generic DB App will be useful for programmers who work with database operations.
  
  In the application properties, Need to set the following key-values;
@@ -252,6 +252,10 @@ fields : first_name,last_name
 
 CUSTOM QUERIES
 ------
+
+ **custom.query.{{id}}** - the complex query which couldnot be achieved through the existing dbapp operations need to be added here. We get the results based on customQueryId which we pass dynamically in rest call.(id must be unique)
+ 
+ ![Image](images/customprops.png "icon")
 
 **Description** : In this scenario we get the results based on customQueryId which we pass dynamically in rest call.
 
